@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card.css";
 import { back } from "./background";
-export const Card = ({ types, id, name, picture }) => {
+export const Card = ({ types, id, name, picture, current }) => {
+  useEffect(() => {
+    console.log(current);
+  }, [current]);
+
   const navigate = useNavigate();
   return (
     <div
-      className="card"
+      className={`card ${current && "shine"}`}
       style={{
         backgroundImage: `url( ${
           types !== undefined &&

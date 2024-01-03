@@ -6,6 +6,7 @@ function Cards({ allPokemons }) {
     <div className="cards">
       {allPokemons?.map((p) => (
         <Card
+          current={false}
           name={p.name}
           key={p.id}
           id={p.id}

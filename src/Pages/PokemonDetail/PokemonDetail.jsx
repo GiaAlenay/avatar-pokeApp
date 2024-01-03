@@ -143,6 +143,7 @@ export const PokemonDetail = (props) => {
               {allInformation.evolutionsDetails.length > 0 ? (
                 allInformation.evolutionsDetails.map((p) => (
                   <Card
+                    current={allInformation.id === p.id ? true : false}
                     name={p.name}
                     key={p.id}
                     id={p.id}
