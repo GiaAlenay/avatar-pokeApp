@@ -1,0 +1,14 @@
+.home{
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/025/951/114/large/jang-jae-ok-22244.jpg?1587431887');
+    width: 100%; 
+    height: 100vh;
+    overflow:auto;
+    background-repeat:no-repeat;
+    background-size: cover;
+ 
+}
+
+.PokemonLogo{
+    max-width: 150px;
+    cursor: pointer;
+}

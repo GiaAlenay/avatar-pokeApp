@@ -1,0 +1,54 @@
+button{all:unset}
+.pageBtn{
+    background-image: url('./img/pagBtn.png');
+    font-weight: bold;
+    -webkit-text-stroke: 1px navy;
+    color: rgb(221, 221, 241);
+}
+.prevBtn{
+    background-image: url('./img/prevBtn.png');
+     color: transparent !important   ;
+}
+.nextBtn{
+    background-image: url('./img/nextBtn.png');
+     color: transparent !important   ;
+}
+
+.upperBtn button{   
+    
+    margin: 1px;
+    background-size: 50px 50px;
+    font-size:20px;
+    width: 50px;
+    height: 50px;
+    
+    transition: transform .4s;
+    text-align: center; 
+}
+
+.upperBtn button:hover{
+    cursor:pointer;
+    
+    transform: scale(0.95)
+   
+}
+.upperBtn{
+margin: 20px;   
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.current{
+    background-size: 65px 65px;
+    font-size:25px;
+    width: 65px;
+    height: 65px;
+    box-shadow: 5px 5px 5px rgb(104, 102, 102);
+    border-radius:1px ;
+    border: 2px solid rgb(238, 235, 235);
+}
